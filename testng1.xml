@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Framework.Listeners"></listener>
+    </listeners>
+    <test  name="AllTest">
+      <classes>
+            <class name="Framework.HomePageTest">
+                <methods><include name="loginTest"></include></methods>
+            </class>
+
+            <class name="Framework.NavBarTest">
+                <methods><include name="navBarText"/></methods>
+            </class>
+
+            <class name="Framework.ValidatingTest">
+                <methods><include name="validateText"/></methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="tests">
+        <listeners>
+            <listener class-name="Framework.Listeners"></listener>
+        </listeners>
+ 
+    <test  name="LoginTest">
+      <classes>
+            <class name="Framework.HomePageTest">
+                <methods><include name="loginTest"/></methods>
+            </class>
+      </classes>
+    </test>
+    <test name="NavBarTest">
+        <classes>
+            <class name="Framework.NavBarTest">
+                <methods><include name="navBarText"/></methods>
+            </class>
+        </classes>
+    </test>
+
+    <test name="ValidatingText">
+        <classes>
+            <class name="Framework.ValidatingTest">
+                <methods><include name="validateText"/></methods>
+            </class>
+
+        </classes>
+    </test>
+</suite>
